@@ -1,11 +1,10 @@
-
-import { AutosalesdataService } from '../autosalesdata.service';
-import { PersonalInfoComponent } from './personalInfo.component';
-import { PersonalinfodataService } from './personalinfodata.service';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import {AutosalesdataService} from "../autosalesdata.service";
+import {PersonalInfoComponent} from "./personalInfo.component";
+import {PersonalinfodataService} from "./personalinfodata.service";
+import {NgModule} from "@angular/core";
+import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   imports: [RouterModule, FormsModule, HttpModule],
@@ -14,4 +13,4 @@ import { RouterModule } from '@angular/router';
   providers : [PersonalinfodataService, AutosalesdataService],
 })
 
-export class personalInfoModule{}
+export class PersonalInfoModule{}

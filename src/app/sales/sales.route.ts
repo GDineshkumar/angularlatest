@@ -1,15 +1,13 @@
-import { AutoRoutes } from './auto/auto.router'
+import { SALES_AUTO_ROUTES } from './auto/auto.routes'
 import { SalesComponent } from './sales.component';
 import { Route } from '@angular/router';
 
-
-
-export const Salesroutes: Route[] = [
+export const SALES_ROUTES: Route[] = [
     {
       path: 'sales',
       component: SalesComponent,
       children: [
-        ...AutoRoutes
+        ...SALES_AUTO_ROUTES
       ]
     }
 ];
